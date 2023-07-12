@@ -2,15 +2,30 @@
 A simple todo app built with django
 
 ![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
-### Setup
+
+### Setup to run in a local machine
 To get this repository, run the following command inside your git enabled terminal
 ```bash
 $ git clone https://github.com/shreys7/django-todo.git
 ```
 You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+First go to current directory of the app
+```bash
+$ cd django-todo
+```
 
+To run the app we need make a virtual environment
+```bash
+$ vitualenv -p python3.7 env
+```
+
+Activate env environtment
+```bash
+$ source env/bin/activate
+```
+
+Then apply the following command.
 ```bash
 $ python manage.py makemigrations
 ```
@@ -34,5 +49,10 @@ $ python manage.py runserver
 ```
 
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
+
+
+
+### Setup to run the app on AWS EC2 Server
+
 
 Cheers and Happy Coding :)
